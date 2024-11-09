@@ -1,0 +1,863 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+    background-color: #e3f2e3;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 10;
+    background: rgb(8, 8, 68) url('https://www.transparenttextures.com/patterns/hexellence.png');
+ 
+}
+
+
+.navbar.scrolled {
+    background-color: #9e191c; /* Light orange background when scrolled */
+}
+
+/* Style for navbar links */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.navbar .logo {
+    font-size: 22px;
+    color: white; /* Vibrant Yellow */
+  
+}
+/* Logo Styling */
+.logo a {
+    display: inline-block;
+}
+
+.logo-image {
+    height: 30px; /* Adjust height as needed */
+    width: auto;
+}
+
+.navbar a {
+  
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+
+
+/* Additional styling for other elements */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #2c3e50;
+    color: white;
+}
+
+/* Media query for responsive adjustments */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dropdown Menu Styling */
+.dropdown {
+    position: relative; /* Position for dropdown */
+}
+
+.sub-menu {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioned relative to the dropdown */
+    top: 100%; /* Position below the dropdown link */
+    left: 0;
+    background-color: #9e191c; /* Background color for dropdown */
+    z-index: 100; /* Ensures it appears above other elements */
+    width: 205px;
+}
+
+.dropdown:hover .sub-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+.sub-menu a {
+    display: block; /* Each link takes up the full width */
+    color:grey; /* Text color */
+    padding: 10px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.sub-menu a:hover {
+    color: #f39c12; /* Highlight color on hover */
+}
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    background: rgb(8, 8, 68) url('https://www.transparenttextures.com/patterns/hexellence.png');
+    color: #f39c12;
+    height: 80vh;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    background-color: #f39c12;
+    color: #111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.button.outline {
+    background-color: transparent;
+    color: #f39c12;
+    border: 2px solid white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button.outline:hover {
+    background-color: white;
+    color: #111;
+}
+
+
+
+
+
+
+
+
+.training-section {
+    background-color: #e3f2e3; /* Light background for the section */
+    padding: 50px 20px; /* Top & Bottom padding */
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.training-content {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between image and text */
+    max-width: 1200px; /* Max width for the content */
+    margin: 0 auto; /* Center content horizontally */
+    gap: 100px;
+}
+
+.training-image {
+    flex: 1; /* Take up equal space */
+    padding: 20px; /* Inner padding */
+}
+
+.training-image img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.training-text {
+    flex: 1; /* Take up equal space */
+    padding: 20px; /* Inner padding */
+}
+
+.training-text h2 {
+    font-size: 2em; /* Larger font size for the heading */
+    margin-bottom: 10px; /* Space below heading */
+    color: #f39c12; /* Vibrant Orange */
+}
+
+.training-text p {
+    font-size: 1.2em; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for better readability */
+    color: #333; /* Dark text for better contrast */
+}
+
+.button-container {
+    margin-top: 20px; /* Space above button */
+}
+
+
+
+
+
+
+
+
+
+
+
+.course-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.course-section h2 {
+    font-size: 2em;
+    color: #2c3e50;
+}
+
+.course-section span {
+    color: #f39c12;
+}
+/* Course Section Styles */
+.course-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #e3f2e3; /* Light gray background */
+}
+
+.course-section h1 {
+    font-size: 28px;
+    color: #011648; /* Dark blue for heading */
+    margin-bottom: 20px;
+}
+
+.course-section h1 span {
+    color: #f39c12; /* Vibrant orange for "Courses" text */
+}
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+/* Course Card Styling */
+.course-card {
+    flex: 0 0 auto;
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 310px;
+    text-align: left;
+    padding: 20px;
+    scroll-snap-align: start;
+}
+
+/* Image Styling */
+.course-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Text Styling inside Course Card */
+.course-card p {
+    font-size: 14px;
+    color: #011648;
+    line-height: 1.6;
+}
+
+.course-card p:first-of-type {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9e191c; /* Light red for rating text */
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .carousel-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        max-width: 100%;
+    }
+}
+
+
+.carousel-container {
+    overflow-x: auto;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 10px 0;
+    display: flex;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #2c3e50 #ecf0f1; /* Scrollbar color */
+}
+
+.carousel-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+    background-color: #2c3e50;
+    border-radius: 4px;
+}
+
+.carousel-container::-webkit-scrollbar-track {
+    background-color: #ecf0f1;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Style for the View More Info button */
+.view-more-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #f39c12; /* Vibrant orange for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-button:hover {
+    background-color: #e67e22; /* Slightly darker orange on hover */
+}
+
+
+
+
+.course-benefits {
+    text-align: center;
+    color: #011648;
+}
+
+.course-benefits h2 {
+    font-size: 30px;
+    color: #011648;
+}
+
+.subheading {
+    font-size: 16px;
+    color: #011648;
+    margin-bottom: 20px;
+}
+
+/* Cards Container */
+.benefit-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Individual Card Styling */
+.benefit-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: scale(1.05); /* Zoom-in effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.icon {
+    font-size: 40px;
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+    font-size: 18px;
+    color: #011648;
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .benefit-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+ 
+
+
+/* Box Shadow for the Certification Section */
+.certification-box {
+    background-color: #ffffff; /* Background color for contrast */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+    margin: 20px auto;
+    max-width: 1000px; /* Optional: set a max-width for better design control */
+}
+
+/* Center content and style adjustments */
+.certification {
+    display: flex;
+    justify-content: center;
+}
+
+.certification-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.certification-text h1{
+    padding: 20px;
+    color:#f39c12;
+}
+.certification-text p{
+    color: #2c3e50;
+}
+
+/* Style for responsive images */
+.certification-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Limit max-width for better layout control */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .certification-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .certification-image img {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.student-grid {
+    column-gap: 20px;
+}
+
+
+.certification-text {
+    flex: 1 1 45%;
+    color: #23313f;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.certification-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.certified-students {
+    padding: 40px 20px;
+    background-color: #e3f2e3;
+    text-align: center;
+}
+
+.certified-students h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+
+
+#achievers {
+    padding: 50px 0;
+    background-color: #e3f2e3; /* Light Gray */
+}
+
+.container {
+    width:80%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #011648; /* Dark Blue */
+    margin-bottom: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 60px;
+}
+
+.card {
+    background-color: #ffffff; /* White */
+    border: 1px solid #2c3e50; /* Dark Blue */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    color: #f39c12; /* Vibrant Orange */
+    margin: 15px 0 5px;
+}
+
+.card p {
+    color: #2c3e50; /* Dark Blue */
+    margin: 0 10px 15px;
+}
+
+
+
+
+
+
+
+.registration-section {
+    padding: 20px;
+}
+
+.form-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for the whole container */
+}
+
+.form-image {
+    flex: 1;
+    background-color: #2c3e50; /* Dark blue background for the image side */
+}
+
+.form-image img {
+    width: 100%;
+    height: 100vh;
+}
+
+.form-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+}
+
+h2 {
+    color: #2c3e50; /* Dark blue */
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased space between fields */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e; /* Darker text color */
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #f39c12; /* Change border color on focus */
+}
+
+input[type="submit"] {
+    background-color: #f39c12; /* Vibrant orange */
+    color: white; /* White text */
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+input[type="submit"]:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+
+/* Add icons to form fields */
+label i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #f39c12; /* Icon color */
+}
+
+
+
+
+
+
+
+
+
+
+.faq-container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: auto;
+    background-color:#ffd54f;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.faq-image {
+    flex: 1.1;
+}
+
+.faq-image img {
+    width: 100%;
+    height: auto;
+}
+
+.faq-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.faq-content h2 {
+    color: #011648;
+}
+
+.faq-item {
+    margin: 15px 0;
+}
+
+.faq-question {
+    color: #9e191c;
+    cursor: pointer; /* Change cursor to pointer for clickable questions */
+    background-color: #ffffff; /* White background for question */
+    padding: 10px; /* Add padding for better appearance */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Optional: border for separation */
+}
+
+.faq-answer {
+    color: #011648;
+    margin-top: 5px; /* Space between question and answer */
+   
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    
+    background: rgb(8, 8, 68) url('https://www.transparenttextures.com/patterns/hexellence.png');
+    color: #ffffff; /* White */
+    padding: 40px 0; /* Increased vertical padding for more space */
+    margin-top: 30px; /* Space above the footer */
+}
+
+footer:hover {
+    
+    background:#9e191c url('https://www.transparenttextures.com/patterns/hexellence.png');
+    color: #ffffff; /* White */
+    padding: 40px 0; /* Increased vertical padding for more space */
+    margin-top: 30px; /* Space above the footer */
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 2;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    color: #f39c12; /* Vibrant Orange */
+    margin-bottom: 15px; /* Added space below headings */
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0; 
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icons a {
+    color: #e3f2e3; 
+    font-size: 30px; 
+}
+.social-icons a:hover {
+    color:aqua ;
+
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 5px 0; 
+    background-color: #e3f2e3; 
+    color: #011648; 
+    margin-top: 20px; 
+} 
+
+

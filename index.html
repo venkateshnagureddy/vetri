@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetri Tech</title>
+    <link rel="stylesheet" href="vetri.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+
+    <header class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#"><img src="images1/logo.png" alt="Vetri Tech Logo" class="logo-image"></a>
+        </div>
+        <ul>
+            <!-- <li><a href="vetri.html">Home</a></li> -->
+            
+            <li class="dropdown">
+                <a href="#">Courses</a>
+                <div class="sub-menu">
+                    <a href="course.html">Web Development</a>
+                    <a href="digital.html">Digital Marketing</a>
+                    <a href="#">AWS</a>
+                    <a href="#">Business Analytics</a>
+                    <a href="#">Software Testing</a>
+                </div>
+            </li>
+            <li><a href="career.html">Career</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </header>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Vetri Technology Solution</h1>
+        <p>Broaden your Skills. Get your Career Moving</p>
+        <p>You are at the right place. Vetri tech, an emerging software academy in Surandai, provides professional
+            training with real-time projects.</p>
+        <div class="button-container">
+           <a href="register.html"><button class="button">Register</button></a> 
+            <button class="button outline">What do we do?</button>
+        </div>
+    </section>
+
+    <!-- Additional content sections... -->
+
+    <script>
+        // JavaScript to change navbar background color on scroll
+        window.addEventListener("scroll", function () {
+            var navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) { // Adjust scroll position as needed
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+
+
+
+    <section class="training-section">
+        <div class="training-content">
+            <div class="training-text">
+                <h2> Best Software Training Institute</h2>
+                <p>Join us to enhance your skills and accelerate your career with our comprehensive software training
+                    programs. Our expert instructors provide hands-on training to ensure you gain real-world experience.
+                </p>
+                <div class="button-container">
+                    <button class="button">Learn More</button>
+                </div>
+            </div>
+            <div class="training-image">
+                <img src="images1/Homepage-Banner-2.webp" alt="Training Institute">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="course-section">
+        <h1>Master Program <span>Courses</span></h1>
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="course-card">
+                    <img src="images1/full-stack-developer-training.webp" alt="Python Fullstack Developer">
+                    <p>⭐⭐⭐⭐⭐ 2219 Ratings (5.0)</p>
+                    <p>The career advancement programs set professionals on the path of continuous learning...</p>
+                    <button class="view-more-button">View More Info</button>
+                </div>
+                <div class="course-card">
+                    <img src="images1/python-programming (1).webp" alt="Java Fullstack Developer">
+                    <p>⭐⭐⭐⭐⭐ 1965 Ratings (5.0)</p>
+                    <p>Full Stack Web Development Masters Program enables you to work with back-end and front-end
+                        technologies...</p>
+                    <button class="view-more-button">View More Info</button>
+                </div>
+                <div class="course-card">
+                    <img src="images1/java-training.webp" alt="Mobile App Development">
+                    <p>⭐⭐⭐⭐⭐ 1965 Ratings (5.0)</p>
+                    <p>Business Intelligence equips candidates with skill sets required for managerial,
+                        techno-functional roles...</p>
+                    <button class="view-more-button">View More Info</button>
+                </div>
+                <div class="course-card">
+                    <img src="images1/software-testing-course.webp" alt="MERN Stack Developer">
+                    <p>⭐⭐⭐⭐⭐ 1965 Ratings (5.0)</p>
+                    <p>Master Program in Software Testing teaches the process of executing an application with intent to
+                        identify...</p>
+                    <button class="view-more-button">View More Info</button>
+                </div>
+                <div class="course-card">
+                    <img src="images1/ui-ux-design.webp" alt="UI/UX Designing">
+                    <p>⭐⭐⭐⭐⭐ 1930 Ratings (5.0)</p>
+                    <p>Data Science Masters Program covers topics like Python, R, data analysis, and visualization...
+                    </p>
+                    <button class="view-more-button">View More Info</button>
+                </div>
+                <div class="course-card">
+                    <img src="images1/digital-marketing.webp" alt="Digital Marketing">
+                    <p>⭐⭐⭐⭐⭐ 1800 Ratings (5.0)</p>
+                    <p>Cloud Computing program covers AWS, Azure, Google Cloud, and the basics of cloud
+                        infrastructure...</p>
+                    <button class="view-more-button">View More Info</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="course-benefits">
+        <h2>Course Benefits For Our Students</h2>
+        <p class="subheading">Best Online and Offline Institute in Surandai.</p>
+        <div class="benefit-cards">
+            <div class="benefit-card">
+                <div class="icon"><i class="fas fa-project-diagram"></i></div>
+                <h3>Industry Expert Trainers</h3>
+                <p>5+ years Experienced Trainer in VTS.Project Based Training will Provide</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon"><i class="fas fa-briefcase"></i></div>
+                <h3>100% Placement Assistant (Helping)</h3>
+                <p>Free guides on career paths, salaries, interview tips, and Resume / CV Updation only</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon"><i class="fas fa-certificate"></i></div>
+                <h3>Course Completion Certificate Provided</h3>
+                <p>Software Based Training and Course Completion certificate Provide from Talent Brothers</p>
+            </div>
+            <div class="benefit-card">
+                <div class="icon"><i class="fas fa-infinity"></i></div>
+                <h3>Flexible batch Timings</h3>
+                <p>After the course completion, any time our students can come and refresh their courses.</p>
+            </div>
+        </div>
+    </div><br><br>
+
+
+
+
+
+
+
+    <!-- VTS Certification Section -->
+    <section class="certification" id="certification">
+        <div class="container certification-box">
+            <div class="certification-content">
+                <div class="certification-text">
+                    <h1>VTS Certification</h1>
+                    <p >VTS provides you a training completion certificate with an online
+                        verification code.</p>
+                    <p >Once training is complete at VTS, you will receive a guaranteed
+                        internship with our own IT
+                        organisation, Vetri IT Systems Private Limited.</p>
+                </div>
+                <div class="certification-image">
+                    <img src="images/certificate.00c0bf2d87b1ad3921e4.png" alt="VTS Certification">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="achievers">
+        <div class="container">
+            <h2>Our Achievers</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="images/c2.ab293d6ef6977ff4c2dd.jpg" alt="Student Achiever 1">
+                    <h3>Student Name 1</h3>
+                    <p>Description or achievement details</p>
+                </div>
+                <div class="card">
+                    <img src="images/c4.b8116cafda358b5af492.jpg" alt="Student Achiever 2">
+                    <h3>Student Name 2</h3>
+                    <p>Description or achievement details</p>
+                </div>
+                <div class="card">
+                    <img src="images/c5.cf1b256e51415ff6663d.jpg" alt="Student Achiever 3">
+                    <h3>Student Name 3</h3>
+                    <p>Description or achievement details</p>
+                </div>
+                <div class="card">
+                    <img src="images/c2.ab293d6ef6977ff4c2dd.jpg" alt="Student Achiever 4">
+                    <h3>Student Name 4</h3>
+                    <p>Description or achievement details</p>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="registration-section">
+        <div class="form-container">
+            <div class="form-image">
+                <img src="images1/29e4f674-c56b-49ff-a297-1a88231388a1.webp" alt="Training Image">
+            </div>
+            <div class="form-content">
+                <h2>Register for Software Training</h2>
+                <form action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course"><i class="fas fa-book-open"></i> Select Course:</label>
+                        <select id="course" name="course" required>
+                            <option value="">--Select a Course--</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="data-science">Data Science</option>
+                            <option value="mobile-development">Mobile Development</option>
+                            <option value="software-testing">Software Testing</option>
+                            <option value="machine-learning">Machine Learning</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comments"></i> Message:</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Any additional information..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome for icons -->
+
+
+
+
+    <br><br>
+    <div class="faq-container">
+        <div class="faq-image">
+            <img src="images1/FAQ.webp" alt="FAQ Image">
+        </div>
+        <div class="faq-content">
+            <h2>Frequently Asked Questions</h2>
+            <details class="faq-item">
+                <summary class="faq-question">Question 1: What is your return policy?</summary>
+                <p class="faq-answer">Answer: Our return policy allows returns within 30 days of purchase. Items must be
+                    in original condition.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Question 2: How can I contact customer support?</summary>
+                <p class="faq-answer">Answer: You can contact our customer support via email at support@example.com or
+                    by calling 123-456-7890.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Question 1: What is your return policy?</summary>
+                <p class="faq-answer">Answer: Our return policy allows returns within 30 days of purchase. Items must be
+                    in original condition.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Question 2: How can I contact customer support?</summary>
+                <p class="faq-answer">Answer: You can contact our customer support via email at support@example.com or
+                    by calling 123-456-7890.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Question 1: What is your return policy?</summary>
+                <p class="faq-answer">Answer: Our return policy allows returns within 30 days of purchase. Items must be
+                    in original condition.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Question 2: How can I contact customer support?</summary>
+                <p class="faq-answer">Answer: You can contact our customer support via email at support@example.com or
+                    by calling 123-456-7890.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Question 1: What is your return policy?</summary>
+                <p class="faq-answer">Answer: Our return policy allows returns within 30 days of purchase. Items must be
+                    in original condition.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Question 2: How can I contact customer support?</summary>
+                <p class="faq-answer">Answer: You can contact our customer support via email at support@example.com or
+                    by calling 123-456-7890.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Question 1: What is your return policy?</summary>
+                <p class="faq-answer">Answer: Our return policy allows returns within 30 days of purchase. Items must be
+                    in original condition.</p>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-question">Question 2: How can I contact customer support?</summary>
+                <p class="faq-answer">Answer: You can contact our customer support via email at support@example.com or
+                    by calling 123-456-7890.</p>
+            </details>
+
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="#" style="color:#e3f2e3;">support@vetritech.com</a></p>
+                <p>Phone: <a href="#"  style="color:#e3f2e3;">+1 (234) 567-890</a></p>
+                <p>Address: 123 Vetri Tech Lane, Surandai, India</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section location">
+                <h3>Our Location</h3>
+                <img src="path/to/location-image.jpg" alt="Map Location" class="location-image">
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vetri Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
